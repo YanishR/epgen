@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  {% if resDict['printShow'] %}
+    <h1>The Random Episode Generator says</h1>
+    <h1>Watch Season {{ resDict['episode'][0] }} Episode
+      {{ resDict['episode'][1] }} of {{ resDict['showName'] }}
+    </h1>
+  {% endif %}
+{% endblock %}
